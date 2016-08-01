@@ -1,16 +1,19 @@
 # Release name
-PRODUCT_RELEASE_NAME := SM-G530H
+PRODUCT_RELEASE_NAME := SM-G530M
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
+# Enhanced NFC
+$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+
 # Inherit device configuration
-$(call inherit-product, device/samsung/fortunave3g/device_fortunave3g.mk)
+$(call inherit-product, device/samsung/fortunalte/device_fortunalte.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := fortunave3g
-PRODUCT_NAME := cm_fortunave3g
+PRODUCT_DEVICE := fortunalte
+PRODUCT_NAME := cm_fortunalte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SM-G530H
+PRODUCT_MODEL := SM-G530M
 PRODUCT_CHARACTERISTICS := phone

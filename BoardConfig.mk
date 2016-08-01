@@ -4,12 +4,12 @@
 # Inherit from the proprietary version
 -include vendor/samsung/fortunave3g/BoardConfigVendor.mk
 
-LOCAL_PATH := device/samsung/fortunave3g
+LOCAL_PATH := device/samsung/fortunalte
 
 #BLOCK_BASED_OTA := false
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := samsung_sm_g530h,fortunave3g,fortuna3g
+TARGET_OTA_ASSERT_DEVICE := samsung_sm_g530h,fortunalte,fortuna3g
 
 # Platform
 TARGET_BOARD_PLATFORM           := msm8916
@@ -90,7 +90,7 @@ BOARD_HAVE_BLUETOOTH_QCOM                   := true
 BLUETOOTH_HCI_USE_MCT                       := true
 
 # Custom RIL class
-BOARD_RIL_CLASS                     := ../../../device/samsung/fortunave3g/ril/
+BOARD_RIL_CLASS                     := ../../../device/samsung/fortunalte/ril/
 PROTOBUF_SUPPORTED                  := true
 
 # Fonts
@@ -102,7 +102,7 @@ MALLOC_IMPL                         := dlmalloc
 # Vendor Init
 TARGET_UNIFIED_DEVICE               := true
 TARGET_INIT_VENDOR_LIB              := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE         := $(LOCAL_PATH)/init/init_fortunave3g.c
+TARGET_LIBINIT_DEFINES_FILE         := $(LOCAL_PATH)/init/init_fortunalte.c
 
 # Audio
 TARGET_QCOM_AUDIO_VARIANT            := caf
@@ -191,7 +191,7 @@ endif
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-   device/samsung/fortunave3g/sepolicy
+   device/samsung/fortunalte/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     bluetooth_loader.te \
